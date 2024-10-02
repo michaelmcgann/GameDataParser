@@ -1,0 +1,68 @@
+01/10/2024 17:46:22
+Exception Message: '{' is invalid after a value. Expected either ',', '}', or ']'. Path: $[1] | LineNumber: 6 | BytePositionInLine: 2.. The file is: C:\Users\micha\C#UdemyCourse\5-Exceptions\Exceptions\Exceptions\Files\gamesInvalidFormat.json
+Stack Trace:    at Exceptions.Classes.GameDataParserApp.Run() in C:\Users\micha\C#UdemyCourse\5-Exceptions\Exceptions\Exceptions\Classes\GameDataParserApp.cs:line 42
+   at Exceptions.Program.Main(String[] args) in C:\Users\micha\C#UdemyCourse\5-Exceptions\Exceptions\Exceptions\Program.cs:line 14
+
+01/10/2024 18:09:39
+Exception Message: '{' is invalid after a value. Expected either ',', '}', or ']'. Path: $[1] | LineNumber: 6 | BytePositionInLine: 2.. The file is: C:\Users\micha\C#UdemyCourse\5-Exceptions\Exceptions\Exceptions\Files\gamesInvalidFormat.json
+Stack Trace:    at Exceptions.Classes.GameDataParserApp.Run() in C:\Users\micha\C#UdemyCourse\5-Exceptions\Exceptions\Exceptions\Classes\GameDataParserApp.cs:line 42
+   at Exceptions.Program.Main(String[] args) in C:\Users\micha\C#UdemyCourse\5-Exceptions\Exceptions\Exceptions\Program.cs:line 14
+
+01/10/2024 18:50:00
+Exception Message: '{' is invalid after a value. Expected either ',', '}', or ']'. Path: $[1] | LineNumber: 6 | BytePositionInLine: 2.. The file is: C:\Users\micha\C#UdemyCourse\5-Exceptions\Exceptions\Exceptions\Files\gamesInvalidFormat.json
+Stack Trace:    at Exceptions.Classes.GameDataParserApp.Run() in C:\Users\micha\C#UdemyCourse\5-Exceptions\Exceptions\Exceptions\Classes\GameDataParserApp.cs:line 44
+   at Exceptions.Program.Main(String[] args) in C:\Users\micha\C#UdemyCourse\5-Exceptions\Exceptions\Exceptions\Program.cs:line 14
+
+01/10/2024 21:10:10
+Exception Message: Value cannot be null. (Parameter 'json')
+Stack Trace:    at System.Text.Json.ThrowHelper.ThrowArgumentNullException(String parameterName)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at Exceptions.Classes.HelperClasses.JsonHandler.FetchListFromJsonString[T](String fileContents, String fileName) in C:\Users\micha\C#UdemyCourse\5-Exceptions\Exceptions\Exceptions\Classes\HelperClasses\JsonHandler.cs:line 11
+   at Exceptions.Classes.GameDataParserApp.Run() in C:\Users\micha\C#UdemyCourse\5-Exceptions\Exceptions\Exceptions\Classes\GameDataParserApp.cs:line 20
+   at Exceptions.Program.Main(String[] args) in C:\Users\micha\C#UdemyCourse\5-Exceptions\Exceptions\Exceptions\Program.cs:line 16
+
+01/10/2024 21:14:11
+Exception Message: Deserialization of interface types is not supported. Type 'Exceptions.Interfaces.IVideoGameInformation'. Path: $[0] | LineNumber: 1 | BytePositionInLine: 3.
+Stack Trace:    at System.Text.Json.ThrowHelper.ThrowNotSupportedException(ReadStack& state, Utf8JsonReader& reader, NotSupportedException ex)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at Exceptions.Classes.HelperClasses.JsonHandler.FetchListFromJsonString[T](String fileContents, String fileName) in C:\Users\micha\C#UdemyCourse\5-Exceptions\Exceptions\Exceptions\Classes\HelperClasses\JsonHandler.cs:line 11
+   at Exceptions.Classes.GameDataParserApp.Run() in C:\Users\micha\C#UdemyCourse\5-Exceptions\Exceptions\Exceptions\Classes\GameDataParserApp.cs:line 20
+   at Exceptions.Program.Main(String[] args) in C:\Users\micha\C#UdemyCourse\5-Exceptions\Exceptions\Exceptions\Program.cs:line 16
+
+02/10/2024 10:31:42
+Exception Message: Deserialization of types without a parameterless constructor, a singular parameterized constructor, or a parameterized constructor annotated with 'JsonConstructorAttribute' is not supported. Type 'Exceptions.Interfaces.Game'. Path: $[0] | LineNumber: 1 | BytePositionInLine: 3.
+Stack Trace:    at System.Text.Json.ThrowHelper.ThrowNotSupportedException(ReadStack& state, Utf8JsonReader& reader, NotSupportedException ex)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at Exceptions.Classes.HelperClasses.JsonHandler.FetchListFromJsonString[T](String fileContents, String fileName) in C:\Users\micha\C#UdemyCourse\5-Exceptions\Exceptions\Exceptions\Classes\HelperClasses\JsonHandler.cs:line 11
+   at Exceptions.Classes.GameDataParserApp.Run() in C:\Users\micha\C#UdemyCourse\5-Exceptions\Exceptions\Exceptions\Classes\GameDataParserApp.cs:line 20
+   at Exceptions.Program.Main(String[] args) in C:\Users\micha\C#UdemyCourse\5-Exceptions\Exceptions\Exceptions\Program.cs:line 18
+
+02/10/2024 10:43:35
+Exception Message: Each parameter in the deserialization constructor on type 'Exceptions.Classes.VideoGame' must bind to an object property or field on deserialization. Each parameter name must match with a property or field on the object. Fields are only considered when 'JsonSerializerOptions.IncludeFields' is enabled. The match can be case-insensitive.
+Stack Trace:    at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_ConstructorParameterIncompleteBinding(Type parentType)
+   at System.Text.Json.Serialization.Converters.ObjectWithParameterizedConstructorConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at Exceptions.Classes.HelperClasses.JsonHandler.FetchListFromJsonString[T](String fileContents, String fileName) in C:\Users\micha\C#UdemyCourse\5-Exceptions\Exceptions\Exceptions\Classes\HelperClasses\JsonHandler.cs:line 11
+   at Exceptions.Classes.GameDataParserApp`1.Run() in C:\Users\micha\C#UdemyCourse\5-Exceptions\Exceptions\Exceptions\Classes\GameDataParserApp.cs:line 18
+   at Exceptions.Program.Main(String[] args) in C:\Users\micha\C#UdemyCourse\5-Exceptions\Exceptions\Exceptions\Program.cs:line 19
+
