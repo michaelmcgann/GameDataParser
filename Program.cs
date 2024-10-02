@@ -11,7 +11,7 @@ class Program {
         IJsonHandler jsonHandler = new JsonHandler();
         IFileHandler fileHandler = new FileHandler();
         List<VideoGame> games = new List<VideoGame>();
-        IDisplay display = new Display();
+        IDisplay display = new ConsoleDisplay();
         GameDataParserApp<VideoGame> app = new(jsonHandler, fileHandler, games, display);
         
         Logger logger = new("log.txt");
