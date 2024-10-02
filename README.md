@@ -77,7 +77,7 @@ Ensure that the JSON file is structured correctly according to the game type you
 The app will then display a list of games and their information.
 
 ## Customization
-###Adding New Game Types
+### Adding New Game Types
 Create a new class that inherits from the Game class:
 
 public class BoardGame : Game {
