@@ -7,11 +7,10 @@ namespace Exceptions;
 class Program {
     
     static void Main(string[] args) {
-        
-        IJsonHandler jsonHandler = new JsonHandler();
         IFileHandler fileHandler = new FileHandler();
         List<VideoGame> games = new List<VideoGame>();
         IDisplay display = new ConsoleDisplay();
+        IJsonHandler jsonHandler = new JsonHandler(display);
         GameDataParserApp<VideoGame> app = new(jsonHandler, fileHandler, games, display);
         
         Logger logger = new("log.txt");
@@ -20,7 +19,7 @@ class Program {
             app.Run();
         }
         catch (Exception e) {
-            Console.WriteLine("Sorry, the app has experienced some unexpected error. Please restart.");
+            display.DisplayMessage("Sorry, the app has experienced some unexpected error. Please restart.");
             logger.Log(e);
         }
 
