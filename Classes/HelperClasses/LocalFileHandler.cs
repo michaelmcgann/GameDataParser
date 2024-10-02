@@ -2,7 +2,7 @@ using Exceptions.Interfaces;
 
 namespace Exceptions.Classes.HelperClasses;
 
-public class FileHandler : IFileHandler {
+public class LocalFileHandler : IFileHandler {
 
     public string FetchFile(out string? filePath) {
         string fileContents = "";

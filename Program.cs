@@ -7,7 +7,7 @@ namespace Exceptions;
 class Program {
     
     static void Main(string[] args) {
-        IFileHandler fileHandler = new FileHandler();
+        IFileHandler fileHandler = new LocalFileHandler();
         List<VideoGame> games = new List<VideoGame>();
         IDisplay display = new ConsoleDisplay();
         IJsonHandler jsonHandler = new JsonHandler(display);
