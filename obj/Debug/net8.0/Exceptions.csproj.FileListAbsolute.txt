@@ -12,3 +12,4 @@ C:\Users\micha\C#UdemyCourse\5-Exceptions\Exceptions\Exceptions\obj\Debug\net8.0
 C:\Users\micha\C#UdemyCourse\5-Exceptions\Exceptions\Exceptions\obj\Debug\net8.0\Exceptions.pdb
 C:\Users\micha\C#UdemyCourse\5-Exceptions\Exceptions\Exceptions\obj\Debug\net8.0\Exceptions.genruntimeconfig.cache
 C:\Users\micha\C#UdemyCourse\5-Exceptions\Exceptions\Exceptions\obj\Debug\net8.0\ref\Exceptions.dll
+C:\Users\micha\C#UdemyCourse\5-Exceptions\Exceptions\Exceptions\obj\Debug\net8.0\Exceptions.sourcelink.json

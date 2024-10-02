@@ -12,6 +12,6 @@ public abstract class Game : IGameInformation {
         Rating = rating;
     }
 
-    public abstract void DisplayInformation();
+    public abstract string RetrieveInformation();
 
 }

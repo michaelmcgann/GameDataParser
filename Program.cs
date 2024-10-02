@@ -7,11 +7,12 @@ namespace Exceptions;
 class Program {
     
     static void Main(string[] args) {
-
+        
         IJsonHandler jsonHandler = new JsonHandler();
         IFileHandler fileHandler = new FileHandler();
         List<VideoGame> games = new List<VideoGame>();
-        GameDataParserApp<VideoGame> app = new(jsonHandler, fileHandler, games);
+        IDisplay display = new Display();
+        GameDataParserApp<VideoGame> app = new(jsonHandler, fileHandler, games, display);
         
         Logger logger = new("log.txt");
         
